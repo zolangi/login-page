@@ -2,11 +2,10 @@
   <h1>{{title}}</h1>
 </div>
 <nav>
-  <ul>
-    <li>Sign up</li>
-    <li>Login</li>
-  </ul>
+    <a routerLink="/signup" routerLinkActive="active">Sign up</a>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
 </nav>
+<router-outlet></router-outlet>
 
 <form>
   <h1>Login</h1>
@@ -32,4 +31,3 @@
     <label>Password: </label>
     <input [(ngModel)]="login.password" placeholder="Please enter your password."/>
   </div>
-
